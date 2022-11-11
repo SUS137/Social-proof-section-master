@@ -1,0 +1,237 @@
+:root{
+
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+
+
+
+
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'League Spartan', sans-serif; 
+    background-image: url(images/bg-pattern-top-mobile.svg),url(images/bg-pattern-bottom-mobile.svg);
+    background-position: 0px 0px , right bottom  ;
+    background-repeat: no-repeat;
+   height:100vh;
+    
+}
+
+
+.container{
+
+    width:95%;
+    max-width: 375px;
+    margin:0 auto 6rem;
+   
+}
+
+.header-texts{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.header-title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    color: var(--Very-Dark-Magenta);
+    padding: 3rem 3rem 0.8rem;
+    letter-spacing: -1.5px;
+    word-spacing: -1.8px;
+   
+}
+.header-paragraf{
+    font-size: 1.125rem;
+    padding: 0.5rem;
+    font-weight: 500;
+    color: var(--Dark-Grayish-Magenta);
+    line-height: 1.4;
+}
+
+.header-rated{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.rated{
+    background-color: var(--Light-Grayish-Magenta);
+    width:93%;
+    border-radius: 10px;
+    padding:0.9rem;
+    box-shadow:0 0 1px hsla(0, 0%, 50%,0.2);
+   
+}
+
+.rated-text{
+    font-size: 1.6rem;
+    color:var(--Very-Dark-Magenta);
+    margin-top:0.8rem;
+    font-weight: 500;
+    
+}
+.stars-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.4rem;
+
+}
+.stars{
+    display:block;
+   width:100%;
+
+}
+
+
+.persons{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+
+}
+.person-info{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+
+}
+
+.person-img{
+
+    width:40px;
+    height:40px;
+    display: block;
+    border-radius: 50%;
+}
+
+.person-name{
+    color:white;
+    font-weight: 700;
+}
+
+.article{
+    background-color: var(--Very-Dark-Magenta);
+    width:93%;
+    margin:0 auto;
+    border-radius: 10px;
+    padding: 2rem 2.5rem 1.5rem;
+}
+
+.person-state{
+    color:var(--Soft-Pink);
+}
+.person-text{
+    margin-top:1.5rem;
+}
+.paragraf{
+    
+    color:white;
+    line-height: 1.5;
+    font-weight: 500;
+
+}
+
+@media (min-width:768px){
+
+    body{
+
+       
+        background-image: url(images/bg-pattern-top-desktop.svg),url(images/bg-pattern-bottom-desktop.svg);
+      
+      
+        
+    }
+
+    .container{
+        max-width: 1200px;
+        margin:7rem auto 5rem;
+           }
+
+    .header-texts{
+        text-align: left;
+        margin:0;
+        flex-basis: 50%;
+        max-width: 475px;
+    }
+
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin:0 4rem;
+
+    }
+
+    .header-title{
+        
+        font-size: 4rem;
+        line-height: 1;
+        padding:0 0 1rem;
+        margin-top:-2rem;
+      
+       
+    }
+
+    .header-rated{
+
+        flex-basis: 50%;
+
+    }
+
+    .rated{
+        display: flex; 
+        gap:1rem;
+        align-items: center;
+        padding:0.3rem 1rem;
+        width:375px;
+        height:60px;
+        
+    }
+    
+    .rated:first-of-type{
+
+        align-self: flex-start;
+    }
+
+    .rated:last-of-type{
+        align-self: flex-end;
+    }
+  
+    .rated-text{
+        font-size: 1.6rem;
+        color:var(--Very-Dark-Magenta);
+        margin-top:0;
+        font-weight: 500;
+        
+    }
+    .stars-picture{
+       
+        gap:0.2rem;
+    
+    }
+    
+    .persons{
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
+        margin:6rem 4rem 4rem;
+
+    
+}
+
+
