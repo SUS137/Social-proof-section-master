@@ -228,10 +228,28 @@ body{
     .persons{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+       
+      
         gap:1rem;
-        margin:6rem 4rem 4rem;
+        margin:8rem 4rem 4rem;}
+
+        .article:first-of-type{
+
+                margin-top: -2rem;
+                margin-bottom: 2rem;
+
+        }
+
+      
+        .article:last-of-type{
+            margin-top: 2rem;
+            margin-bottom: -2rem;
+
+        }
 
     
+        
 }
 
 
